@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  background-color: #2e2e2e;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem; /* consistent padding across all pages */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .logo {
+  width: 200px; /* fixed size so it won’t jump */
+  height: auto;
+  margin-bottom: 1rem;
+  border: 3px solid white;
+  border-radius: 10%;
+}
+
+header h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* NAVIGATION */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* prevents overlap on smaller screens */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: rgb(211, 211, 14);
+}
+
+/* MAIN CONTENT */
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  color: #0077b6;
+  margin-bottom: 1rem;
+}
+
+/* PROJECT GALLERY */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-item {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.project-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-item p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #025e8f;
+}
+
+/* CONTACT */
+#contact a {
+  color: #0077b6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+  color: #00b4d8;
+}
+
+/* FOOTER */
+footer {
+  background: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-top: 4px solid #00b4d8;
+  margin-top: auto;
+}
+
+footer a {
+  color: rgb(211, 200, 200);
+}
+
+footer a:hover {
+  color: white;
+}
+
+/* ACCESSIBILITY */
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: 3px solid #00b4d8;
+  outline-offset: 2px;
+}
+
